@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Registerwindow</class>
+ <widget class="QDialog" name="Registerwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="userlabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="passwordlabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>120</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Password</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="repasslabel">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>160</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Re-type password</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="usertext">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>80</y>
+     <width>113</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passtext">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>141</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="repasstext">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>121</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>220</y>
+     <width>291</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>GroupBox</string>
+   </property>
+   <widget class="QLabel" name="monthlabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Month</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="daylabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Day</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="yearlabel">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Year</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="yeartext">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>60</y>
+      <width>61</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="daylabel_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>71</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="monthcombo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>80</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
