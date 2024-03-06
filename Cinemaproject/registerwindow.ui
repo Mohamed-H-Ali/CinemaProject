@@ -71,6 +71,9 @@
      <height>26</height>
     </rect>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
   <widget class="QLineEdit" name="repasstext">
    <property name="geometry">
@@ -80,6 +83,9 @@
      <width>121</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -143,7 +149,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="daylabel_2">
+   <widget class="QLineEdit" name="daytext">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -319,7 +325,7 @@
      <string>Romance</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBOtherGenreox_6">
+   <widget class="QCheckBox" name="OtherGenre">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -346,56 +352,56 @@
     <string>Register</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="usererrormsg">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>280</x>
      <y>80</y>
      <width>191</width>
-     <height>20</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;* Already Existing&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="retypeerrormsg">
    <property name="geometry">
     <rect>
      <x>340</x>
      <y>160</y>
      <width>161</width>
-     <height>20</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;*Not matching&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="ageerrormsg">
    <property name="geometry">
     <rect>
      <x>370</x>
      <y>320</y>
      <width>161</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;* Age is less than 12&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="registerrormsg">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>150</x>
      <y>700</y>
-     <width>141</width>
+     <width>201</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#ff0000;&quot;&gt;* All fields must be filled&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <zorder>GenderBox</zorder>
@@ -411,10 +417,10 @@
   <zorder>AccTypeBox</zorder>
   <zorder>GenreBox</zorder>
   <zorder>pushButtonRegister2</zorder>
-  <zorder>label</zorder>
-  <zorder>label_2</zorder>
-  <zorder>label_3</zorder>
-  <zorder>label_5</zorder>
+  <zorder>usererrormsg</zorder>
+  <zorder>retypeerrormsg</zorder>
+  <zorder>ageerrormsg</zorder>
+  <zorder>registerrormsg</zorder>
  </widget>
  <resources/>
  <connections/>
