@@ -12,8 +12,11 @@ class welcomewindow : public QDialog
     Q_OBJECT
 
 public:
-    explicit welcomewindow(QWidget *parent = nullptr);
+    explicit welcomewindow(QString username, int age, QWidget *parent = nullptr);
     ~welcomewindow();
+
+private slots:
+    void on_logoutbutton_clicked();
 
 private:
     Ui::welcomewindow *ui;

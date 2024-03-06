@@ -18,12 +18,14 @@ Loginwindow::~Loginwindow()
 
 void Loginwindow::on_pushButtonLogin_clicked()
 {
+    int age=-1;
     bool existed=false;
     QString username=ui->lineEditUsername->text();
     QString password=ui->lineEditPassword->text();
     for(int i=0; i<100; i++){
-        if(username == usernames[i] || password == passwords[i]){
+        if(username == usernames[i] && password == passwords[i]){
             existed = true;
+            age=ages[i];
         }
     }
     if(!existed){
@@ -31,9 +33,9 @@ void Loginwindow::on_pushButtonLogin_clicked()
     }
     else
     {
-        hide();
-        welcomewindow *welcome = new welcomewindow(this);
+        welcomewindow *welcome = new welcomewindow(username, age, this);
         welcome->show();
+        hide();
     }
 }
 
@@ -44,7 +46,7 @@ void Loginwindow::on_pushButtonRegiester_clicked()
     QString username=ui->lineEditUsername->text();
     QString password=ui->lineEditPassword->text();
     for(int i=0; i<100; i++){
-        if(username == usernames[i] || password == passwords[i]){
+        if(username == usernames[i] && password == passwords[i]){
             existed = true;
         }
     }
@@ -58,8 +60,6 @@ void Loginwindow::on_pushButtonRegiester_clicked()
         hide();
         regster->show();
     }
-
-
 }
 
 //A condition here to hide the login window and show the welcome window
