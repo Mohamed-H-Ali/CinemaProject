@@ -62,6 +62,5 @@ void Loginwindow::on_pushButtonRegiester_clicked()
     }
 }
 
-//A condition here to hide the login window and show the welcome window
 
 
